@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Ar1647347",
+=======
+    "password": "root",
+>>>>>>> d4ab57e0170c1cf7e4993562e7e7446ba4cc00b8
     "database": "readit_db",
     "host": "localhost",
     "dialect": "mysql"
