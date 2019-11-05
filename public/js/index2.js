@@ -1,57 +1,51 @@
+// // Module Revealing Pattern
 
-// Module Revealing Pattern
-var api = function(){
-    let $submitBtn = $("#submit");
+// var api = function(){
+//     let $submitBtn = $("#submit");
 
-     // Add event listeners to the submit and delete buttons
-     $submitBtn.on("click", searchForBooks);
+//      // Add event listeners to the submit and delete buttons
+//      $submitBtn.on("click", searchForBooks);
 
-     function searchForBooks(event){
-        
-        var search = $('#example-text').val();
-        var $exampleList = $("#example-list");
+//      function searchForBooks(event){
 
-        if(search != ''){
-            $.ajax({
-                headers: {
-                "Content-Type": "application/json"
-                },
-                type: "GET",
-                url: "https://www.googleapis.com/books/v1/volumes?",
-                data: {q: search}
-            }).done(function(data){
-               //console.log(data);
-               $exampleList.empty();
+//         var search = $('#example-text').val();
+//         var $exampleList = $("#example-list");
 
-               for(i=0;i < data.items.length;i++){
-                
-                // Write out data for debug
-                console.log(data.items[i].volumeInfo);
+//         if(search != ''){
+//             $.ajax({
+//                 headers: {
+//                 "Content-Type": "application/json"
+//                 },
+//                 type: "GET",
+//                 url: "https://www.googleapis.com/books/v1/volumes?",
+//                 data: {q: search}
+//             }).done(function(data){
+//                //console.log(data);
+//                $exampleList.empty();
 
-                // Build a tag
-                let a = "<a>" + data.items[i].authors + ':' + data.items[i].volumeInfo.title + "</a>"
+//                for(i=0;i < data.items.length;i++){
 
-                // Append to list
-                $exampleList.append(a);
+//                 // Write out data for debug
+//                 console.log(data.items[i].volumeInfo);
 
-               }
+//                 // Build a tag
+//                 let a = "<a>" + data.items[i].authors + ':' + data.items[i].volumeInfo.title + "</a>"
 
+//                 // Append to list
+//                 $exampleList.append(a);
 
-               //exampleList.append(data);
-            })
-        }
+//                }
 
-        return false;
+//                //exampleList.append(data);
+//             })
+//         }
 
-           
-     }
-     return {
-         searchForBook: searchForBooks
-     }
- }();
+//         return false;
 
- api.searchForBook();
+//      }
+//      return {
+//          searchForBook: searchForBooks
+//      }
+//  }();
 
-
-
-
+//  api.searchForBook();

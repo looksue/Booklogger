@@ -26,6 +26,24 @@ module.exports = function(app) {
       Readit_db
     ) {
       res.json(Readit_db);
+  // Get all books
+  app.get("/api/books", function(req, res) {
+    db.Book.findAll({}).then(function(dbBooks) {
+      res.json(dbBooks);
+    });
+  });
+
+  // Create a new book
+  app.post("/api/books", function(req, res) {
+    db.Book.create(req.body).then(function(dbBook) {
+      res.json(dbBook);
+    });
+  });
+
+  // Delete a book by id
+  app.delete("/api/books/:id", function(req, res) {
+    db.Book.destroy({ where: { id: req.params.id } }).then(function(dbBook) {
+      res.json(dbBook);
     });
   });
 };
