@@ -14,8 +14,10 @@ body {
   color: whitesmoke;
 }
 
-h2{
+h2, h3{
   font-family: ‘Lobster’, cursive;
+  font-size: 50px;
+  text-align: center;
 
 }
 
@@ -30,4 +32,9 @@ h2{
 .modal-title{
   font-family: ‘Lobster’, cursive;
 
+}
+
+.readit{
+  padding-left: 350px;
+  padding-right: 350px;
 }

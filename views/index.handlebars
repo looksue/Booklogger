@@ -1,7 +1,7 @@
 <div id="home">
-  <div class="container">
+  <div class="container readit">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col">
         
         <h1>{{title}}</h1>
         {{#unless this.read}}
@@ -22,17 +22,17 @@
          <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
         {{/unless}}
-        <h3>Books I Want to Read:</h3>
+        <h3>Must Reads:</h3>
         <ul id="sumbmitted-list" class="list-group">
           {{#each books}}
           <li data-id="{{this.title}}" class="list-group-item">
             <a href="book/{{this.title}}">{{this.title}}</a>
-            <button class="btn btn-danger float-right delete">delete</button>
+            <button class="btn btn-danger float-right delete">Delete</button>
           </li>
           {{/each}}
         </ul>
       </div>
-      <div class="col-sm-6">
+      {{!-- <div class="col-sm-6">
         <p class="colHeading">Books I Have Read:</p>
         {{title}}
         {{#if this.read}}
@@ -42,7 +42,7 @@
           </div>
         </div>
         {{/if}}
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>
