@@ -2,7 +2,6 @@
 // Get references to page elements
 
 var $bookTitle = $("#book-title");
-
 var $submitBtn = $("#submit");
 var $bookList = $("#sumbmitted-list");
 var globalResults = {};
@@ -141,16 +140,7 @@ var handleFormSubmit = function(event) {
       console.log(res);
       $("#results").modal(focus);
     });
-    //alert("You must enter a book title or author!");
-    //return;
   }
-
-  // API.saveBook(book).then(function () {
-  //   refreshBooks();
-  // });
-  // $bookTitle.val("");  Not sure if this is needed
-  // $bookAuthor.val("");
-  // $bookGenre.val("");
 };
 $("#results").on("click", ".add", function() {
   var theBook = globalResults[$(this).val()];
