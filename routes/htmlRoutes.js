@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // Load book page and pass in a book by id
   app.get("/book/:id", function(req, res) {
-    console.log("params: ", req.params)
+    console.log("params: ", req.params);
     db.Book.findOne({ where: { title: req.params.id } }).then(function(dbBook) {
       res.render("book", {
         book: dbBook
