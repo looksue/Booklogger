@@ -11,8 +11,23 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  font-family: 'Merriweather', serif;
   color: whitesmoke;
 }
 
-font-family: 'Merriweather Sans', sans-serif;
+h2{
+  font-family: ‘Lobster’, cursive;
+
+}
+
+.results {
+   color: black;
+}
+
+.modal{
+  color: black;
+}
+
+.modal-title{
+  font-family: ‘Lobster’, cursive;
+
+}

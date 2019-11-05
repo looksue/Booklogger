@@ -6,7 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     {
       title: DataTypes.STRING,
       author: DataTypes.STRING,
-      summary: DataTypes.TEXT,
+      // fixed issue with summary by switching from .text to .string so the length doesnt matter. -REY
+      summary: DataTypes.STRING,
       genre: DataTypes.STRING,
       rating: DataTypes.STRING,
       cover: DataTypes.STRING
