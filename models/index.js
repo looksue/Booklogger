@@ -7,6 +7,18 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
+function rate(rating) {
+  document.rating.stars.value = rating;
+  document.rating.submit();
+  return true;
+}
+
+function rate_images(rating) {
+  if(!(rating>=1 && rating<=5)) return;
+
+  for(var i=1;i<=rating;i++)
+      document.getElementById("rate_image_"+rating).src="lit.gif";
+}
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
