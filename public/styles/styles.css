@@ -11,6 +11,32 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  font-family: 'Merriweather', serif;
   color: whitesmoke;
 }
+
+
+h2, h3{
+  font-family: ‘Lobster’, cursive;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+.results {
+   color: black;
+}
+
+.modal{
+  color: black;
+}
+
+.modal-title{
+  font-family: ‘Lobster’, cursive;
+
+}
+
+.readit{
+  padding-left: 350px;
+  padding-right: 350px;
+}
+

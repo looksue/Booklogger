@@ -113,7 +113,7 @@ var handleFormSubmit = function(event) {
         // <========== assign a place holder in else
         var $col2 = $("<div>").addClass("col-sm-8");
         var $title = $("<div>").html(
-          "<strong>Title: " + book.volumeInfo.title + "</strong>"
+          "<strong>Title:</strong>" + book.volumeInfo.title
         );
         var authors = "";
         if (book.volumeInfo.authors !== undefined) {
@@ -126,9 +126,9 @@ var handleFormSubmit = function(event) {
         } else {
           authors = "Unknown Author";
         }
-        var $author = $("<div>").text("Author: " + authors);
+        var $author = $("<div>").html("<strong>Author:</strong> " + authors);
         var $description = $("<div>").html(
-          "Description:<br>" + book.volumeInfo.description
+          "<strong>Description:</strong> <br>" + book.volumeInfo.description
         );
         var $add = $("<button>").addClass("btn btn-success add");
         $add.text("+");
