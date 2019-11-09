@@ -11,4 +11,8 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  font-family: 'Merriweather', serif;
+  color: whitesmoke;
 }
+
+font-family: 'Merriweather Sans', sans-serif;
