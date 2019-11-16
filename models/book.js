@@ -9,8 +9,8 @@ module.exports = function(sequelize, DataTypes) {
       // fixed issue with summary by switching from .text to .string so the length doesnt matter. -REY
       summary: DataTypes.STRING,
       genre: DataTypes.STRING,
-      rating: DataTypes.STRING,
-      cover: DataTypes.STRING
+      rating: DataTypes.STRING
+      // cover: DataTypes.STRING
     },
     {
       //DB will not work properly without time stamp set to false, unsure why

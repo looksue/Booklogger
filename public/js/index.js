@@ -60,7 +60,7 @@ var refreshBooks = function() {
 
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
-        .text("delete");
+        .text("Delete");
 
       $li.append($button);
 
@@ -81,10 +81,10 @@ var handleFormSubmit = function(event) {
   var book = {
     title: $("#book-title")
       .val()
+      .trim(),
+    author: $("#book-author")
+      .val()
       .trim()
-    // author: $("#book-author")
-    //   .val()
-    //   .trim()
   };
 
   console.log(book.title, book.author);
@@ -101,7 +101,7 @@ var handleFormSubmit = function(event) {
 
         console.log(book.volumeInfo);
 
-        //console.log(book.volumeInfo.imageLinks.smallThumbnail)
+        console.log(book.volumeInfo.imageLinks.smallThumbnail);
 
         if (book.volumeInfo.imageLinks) {
           var $img = $("<img>").attr(
