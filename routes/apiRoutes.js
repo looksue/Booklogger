@@ -8,9 +8,9 @@ module.exports = function(app) {
     if (req.body.title.length) {
       queryUrlTitle += "+intitle:" + req.body.title;
     }
-    // if (req.body.author.length) {
-    //   queryUrlTitle += "+inauthor:" + req.body.author;
-    // }
+    if (req.body.author.length) {
+      queryUrlTitle += "+inauthor:" + req.body.author;
+    }
     console.log(queryUrlTitle);
     axios
       .get(queryUrlTitle)
@@ -50,6 +50,7 @@ module.exports = function(app) {
   app.post("/api/books", function(req, res) {
     db.Book.create(req.body).then(function(dbBook) {
       res.json(dbBook);
+      console.log(res.json(dbBook));
     });
   });
 
