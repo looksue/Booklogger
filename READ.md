@@ -4,8 +4,8 @@ This app is deployed through Heroku. You must go to the link listed below to acc
 1. Type in the title or author of a book you want to read.
 2. Click the submit button to search for it.
 3. When the modal window pops up, find the book you were looking for and click the "+" button.
-4. When you are done reading the book, click on it and give it a rating on the 1 to 5 scale.
-5. If you would like to delete the book off your list, click the delete button. 
+4. The book will be saved in MySql database. 
+5. If you would like to delete the book off your list, click the delete button. You may need to refresh your page to see the book has been deleted.  
 
 **Link to App:** 
 [Readit link on Heroku](https://agile-hollows-65374.herokuapp.com/)
@@ -16,6 +16,9 @@ This is an ORM app that is supported by Handlebars, Express, Node, and MySql. By
 **Motivation:** To create a full-stack application hosted on Heroku, understand the folder/file structures that execute on both the front and back end, understand how an ORM and Handlebars can support each other, and to work as a team to get the tasks completed. 
 
 **Tech/Framework:** Node, Express, JavaScript, MYSQL, Handlebars, ORM
+
+**App Styling Image:
+! [Readit](assets/home.png)
 
 **Link to Project:**
 [Readit](https://github.com/looksue/Booklogger)
