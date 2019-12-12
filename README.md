@@ -18,7 +18,7 @@ This is an ORM app that is supported by Handlebars, Express, Node, and MySql. By
 **Tech/Framework:** Node, Express, JavaScript, MYSQL, Handlebars, ORM
 
 **App Styling Image:
-! [Readit](public/assets/images/home.png)
+![Readit](public/assets/images/home.png)
 
 **Link to Project:**
 [Readit](https://github.com/looksue/Booklogger)
